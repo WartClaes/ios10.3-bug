@@ -1,0 +1,70 @@
+html,
+body {
+    font-family: arial;
+    padding: 0;
+    margin: 0;
+}
+
+.body--freeze {
+    background-color: hotpink;
+    position: fixed;
+    width: 100%;
+}
+
+.body--freeze header {
+    position: fixed;
+    top: 0;
+}
+
+.body--freeze .backdrop {
+    visibility: visible;
+}
+
+header {
+    background-color: deepskyblue;
+    color: white;
+    height: 50px;
+    left: 0;
+    line-height: 50px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    visibility: visible;
+    z-index: 51
+}
+
+section {
+    height: 100vh;
+}
+
+section:nth-child(5n) {
+    background-color: thistle;
+}
+
+section:nth-child(5n+1) {
+    background-color: springgreen;
+}
+
+section:nth-child(5n+2) {
+    background-color: skyblue;
+}
+
+section:nth-child(5n+3) {
+    background-color: peachpuff;
+}
+
+section:nth-child(5n+4) {
+    background-color: goldenrod;
+}
+
+.backdrop {
+    background-color: rgba(0, 255, 0, .5);
+    bottom: 0;
+    visibility: hidden;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
